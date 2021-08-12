@@ -43,7 +43,6 @@ FROM playlist_track pt
 JOIN playlist p
 ON p.playlist_id = pt.playlist_id
 WHERE p.name = 'Music'
-GROUP BY pt.track_id
 ORDER BY pt.track_id;
 
 -- Get all track names for 'playlist_id'.
